@@ -36,14 +36,12 @@
             color: aliceblue;
 
         }
-        // css example
-span {
-  content: "\2103";
-}
+
     </style>
 </head>
 
 <body>
+    <span style='font-size:100px;'>&#8451;</span>
     <input type="text" id="city">
     <button onclick="getdata()">search weather</button>
     <div id="output">
@@ -83,7 +81,7 @@ span {
         let h3 = document.createElement("h3")
         h3.innerText = `Place Name - ${data.name}`
         let p1 = document.createElement("p")
-        p1.innerText = `Current - ${Math.floor(data.main.temp - 273.15)} <span>&#8451;</span>`
+        p1.innerText = `Current - ${Math.floor(data.main.temp - 273.15)} &#8451;`
 
         let p2 = document.createElement("p")
         p2.innerText = `Maximum temperture - ${Math.floor(data.main.temp_max - 273.15)} celsius`
