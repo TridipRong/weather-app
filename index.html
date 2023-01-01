@@ -79,7 +79,7 @@
         let h3 = document.createElement("h3")
         h3.innerText = `Place Name - ${data.name}`
         let p1 = document.createElement("p")
-        p1.innerText = `Current - ${Math.floor(data.main.temp - 273.15)}  "&#176" c`
+        p1.innerText = `Current - ${Math.floor(data.main.temp - 273.15)} <span>&#8451;</span>`
 
         let p2 = document.createElement("p")
         p2.innerText = `Maximum temperture - ${Math.floor(data.main.temp_max - 273.15)} celsius`
